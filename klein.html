@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="klein.css">
+    <link rel="stylesheet" href="common.css">
+    <title>Klein</title>
+</head>
+<body onload="chgimg()">
+
+    <button onclick="work()">
+        Trial
+    </button>
+
+    <script>
+        function chgimg () {
+            var img = sessionStorage.getItem('fool');
+            if (img == '1') {
+                document.body.style.background = "rgb(89, 65, 112) url('Images/Fool_Symbol.webp') center top no-repeat";
+                sessionStorage.clear();
+            } else if (img == '2') {
+                document.body.style.background = "rgb(145, 144, 134) url('Images/Church\ of\ the\ food.webp') center top no-repeat";
+                sessionStorage.clear();
+            }
+            document.body.style.backgroundSize = "min(100vw,100vh)";
+            console.log(img);
+        }
+
+        function work () {
+            document.body.style.background = "black url('Images/Amon.jpg') center top no-repeat";
+        }
+    </script>
+</body>
+</html>
