@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="characters.css">
         <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Character selection</title>
     </head>
+
     <body>
+        <div class="top">
+            <header class="mhead">
+                <a href="lotm.html" title="About Lord of the Mysteries">
+                    <img src="Images/Site-logo.webp" alt="LOTM Logo">
+                </a>
+                <h1 class="lotm">Lord of the Mysteries</h1>
+            </header>
+    
+            <nav class="hnav">
+                <ul>
+                    <li>
+                        <a href="about.html" title="About Project">About</a>
+                    </li>
+                    <li>
+                        <a href="characters.html" title="A Character Chooser" class="active">Characters</a>
+                    </li>
+                    <li>
+                        <a href="trailer.html" title="Lord of the Mysteries Donghua official trailer">Trailer</a>
+                    </li>
+                    <li class="hnavr">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search">
+                            <button type="submit">
+                                <i class="material-icons">search</i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="hnavr" title="Pause background video">
+                        <button id="plpa" onclick="plpa()">
+                            <i class="material-icons">pause</i>
+                        </button>        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
 
-        <nav class="hnav">
-            <a href="about.html"></a>
-        </nav>
-
-        <button id="plpa" onclick="plpa()">
-            <i class="material-icons">pause</i>
-        </button>
-
-        <h1>Lord of the Mysteries</h1>
 
         <div id="images">
             <div>

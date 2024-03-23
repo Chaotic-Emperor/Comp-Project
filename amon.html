@@ -5,13 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="amon.css">
     <link rel="stylesheet" href="common.css">
+    <style>
+        .hnav {
+            background-color: rgba(174, 235, 255, 0.5);
+        }
+        .hnav > ul > li > a:hover:not(.active, .active-sub){
+            background-color: rgba(104, 155, 172, 0.61);
+        }
+    </style>
 
     <title>Amon</title>
 </head>
 <body>
-    <div id="bg-img">
-        <img src="" alt="">
+
+    <div class="top">
+        <header class="mhead">
+            <a href="lotm.html" title="About Lord of the Mysteries">
+                <img src="Images/Site-logo.webp" alt="LOTM Logo">
+            </a>
+            <h1 class="lotm">Lord of the Mysteries</h1>
+        </header>
+
+        <nav class="hnav">
+            <ul>
+                <li>
+                    <a href="about.html" title="About Project">About </a>
+                </li>
+                <li>
+                    <a href="characters.html" title="A Character Chooser" class="active-sub" >Characters</a>
+                </li>
+                <li>
+                    <a href="trailer.html">Trailer</a>
+                </li>
+                <li class="hnavr">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search">
+                        <button type="submit">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </div>        
+                </li>
+            </ul>
+        </nav>
     </div>
+
     
 </body>
 </html>

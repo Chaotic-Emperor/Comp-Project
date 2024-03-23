@@ -1,0 +1,4 @@
+body {
+    background: rgb(167, 131, 224) url(Images/Hermit_Symbol2.png) center top no-repeat;
+    background-size: min(100vh,100vw);
+}

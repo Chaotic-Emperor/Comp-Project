@@ -18,9 +18,8 @@
 
 .material-icons {
     font-family: 'Material Icons';
-    font-weight: normal;
     font-style: normal;
-    font-size: 24px;
+    font-weight: normal;
     /* Preferred icon size */
     display: inline-block;
     line-height: 1;
@@ -42,16 +41,110 @@
     font-feature-settings: 'liga';
 }
 
-/* Header */
-
-
-
-/* Navigation */
-.hnav {
-    display: flex;
-    flex-direction: row;
+.lotm {
+    text-align: center;
+    font-family: California Sun;
+    font-size: min(10vw,15vh);
+    color: rgb(184, 89, 0);
+    text-shadow:  min(-0.2vh,-0.2vw)  min(-0.2vh,-0.2vw) #FFF,
+    min(0.2vh,0.2vw)  min(-0.2vh,-0.2vw) #FFF,
+    min(-0.2vh,-0.2vw) min(0.2vh,0.2vw) #FFF,
+    min( 0.2vh,0.2vw) min(0.2vh,0.2vw) #FFF; 
 }
 
-.hnav > a {
+/* Header */
+
+.mhead h1 {
+    margin: 0;
+}
+
+.top {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.mhead a img {
+    height: 1em;
+    float: left;
+    font-size: min(10vw,15vh);
+    object-fit:contain;
+}
+
+/* Navigation */
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.hnav {
+    background-color: rgba(192, 97, 255, 0.301);
+    font-size: min(2vw,2vh);
+}
+
+.hnav > ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+.hnav > ul > li {
+    float: left;
+}
+
+.hnav > ul > li > a {
+    color: rgb(184, 89, 0);
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: min(3vw,3vh);
+    padding: 1em 1.5em;
+    display: block;
+}
+
+.hnav > ul > li > a:hover:not(.active, .active-sub){
+    background-color: rgb(194, 129, 255);
+}
+
+.hnav > ul > .hnavr{
+    float: right;
+}
+
+.hnavr input[type=text] {
+    padding: 0.5em;
+    margin-top: 1.25em;
+
+    border: none;
+}
+
+.hnavr .search-box button {
+    float: right;
+
+    padding: 0.45em 0.9em;
+    margin-top: 1.25em;
+    margin-right: 1em;
     
+    border: none;
+    cursor: pointer;
+}
+
+.hnavr .search-box *{
+    font-size: min(2vw,2vh);
+}
+
+.active {
+    background-color: rgb(226, 178, 133);
+}
+
+.active-sub {
+    background-color: rgba(226, 178, 133, 0.801);
+}
+
+@media screen and (max-width: 768px) {
+    .hnav {
+
+    }
+
 }
