@@ -45,11 +45,11 @@
     text-align: center;
     font-family: California Sun;
     font-size: min(10vw,15vh);
-    color: rgb(184, 89, 0);
-    text-shadow:  min(-0.2vh,-0.2vw)  min(-0.2vh,-0.2vw) #FFF,
-    min(0.2vh,0.2vw)  min(-0.2vh,-0.2vw) #FFF,
-    min(-0.2vh,-0.2vw) min(0.2vh,0.2vw) #FFF,
-    min( 0.2vh,0.2vw) min(0.2vh,0.2vw) #FFF; 
+    color: rgb(81, 45, 168);
+    text-shadow:  min(-0.2vh,-0.2vw)  min(-0.2vh,-0.2vw) rgb(255, 223, 102),
+    min(0.2vh,0.2vw)  min(-0.2vh,-0.2vw) rgb(255, 223, 102),
+    min(-0.2vh,-0.2vw) min(0.2vh,0.2vw) rgb(255, 223, 102),
+    min( 0.2vh,0.2vw) min(0.2vh,0.2vw) rgb(255, 223, 102)
 }
 
 /* Header */
@@ -81,7 +81,7 @@ a {
 }
 
 .hnav {
-    background-color: rgba(192, 97, 255, 0.301);
+    background-color: rgba(82, 45, 168, 0.55);
     font-size: min(2vw,2vh);
 }
 
@@ -96,7 +96,7 @@ a {
 }
 
 .hnav > ul > li > a {
-    color: rgb(184, 89, 0);
+    color: rgb(255, 215, 0);
     font-weight: bolder;
     font-variant: small-caps;
     font-size: min(3vw,3vh);
@@ -105,7 +105,7 @@ a {
 }
 
 .hnav > ul > li > a:hover:not(.active, .active-sub){
-    background-color: rgb(194, 129, 255);
+    background-color: rgb(145, 110, 225);
 }
 
 .hnav > ul > .hnavr{
@@ -135,11 +135,11 @@ a {
 }
 
 .active {
-    background-color: rgb(226, 178, 133);
+    background-color: rgb(81, 45, 168);
 }
 
 .active-sub {
-    background-color: rgba(226, 178, 133, 0.801);
+    background-color: rgba(81, 45, 168, 0.801);
 }
 
 @media screen and (max-width: 768px) {
@@ -147,4 +147,72 @@ a {
 
     }
 
+}
+
+/* Content */
+
+blockquote {
+    margin: 0 0 1em;
+    padding: 20px;
+    background-color: rgba(255, 179, 226, 0.315);
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+    width: 100%;
+}
+
+section {
+    float: left;
+    width: 70%;
+}
+
+
+aside {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside div {
+    padding: min(1vh,1vw);
+}
+
+.im {
+    align-self: center;
+}
+
+.im img {
+    height: min(60vh,35vw);
+}
+
+main {
+    margin: auto 3vw;
+    font-size: min(2.5vh,2.5vw);
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.geninfo p, .geninfo ul li, .phys p {
+    font-size: 0.75em;
+}
+
+#name{
+    font-size: min(3vh,3vw);
+}
+
+.spoiler, .spoiler a{ 
+    color: black; 
+    background-color: black;
+}
+  
+.spoiler:hover, .spoiler a:hover{
+color: grey;
 }

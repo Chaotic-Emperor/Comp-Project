@@ -6,8 +6,72 @@
     <title>Lord of the Mysteries</title>
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="common.css">
+    <style>
+        #bg-video {
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
+    
+    <div class="top">
+        <header class="mhead">
+            <a href="about.html" title="About Lord of the Mysteries">
+                <img src="Images/Site-logo.webp" alt="LOTM Logo">
+            </a>
+            <h1 class="lotm">Lord of the Mysteries</h1>
+        </header>
+
+        <nav class="hnav">
+            <ul>
+                <li>
+                    <a href="about.html" title="About Project" class="active">About </a>
+                </li>
+                <li>
+                    <a href="characters.html" title="A Character Chooser">Characters</a>
+                </li>
+                <li>
+                    <a href="trailer.html">Trailer</a>
+                </li>
+                <li class="hnavr">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search">
+                        <button type="submit">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>Lord of the Mysteries is a web series written by Cuttlefish That Loves Diving and originally posted on <a href="webnovel.com">Webnovel</a>. The series has great worldbuilding and explores a lot of fantasy aspects. The fantasy aspects are unique and the characters are fleshed out with unique traits to themselves.</p>
+        </section>
+        <section>
+            <h2>Sypnosis</h2>
+            <p>With the rising tide of steam power and machinery, who can come close to being a Beyonder? Shrouded in the fog of history and darkness, who or what is the lurking evil that murmurs into our ears?
+
+            Waking up to be faced with a string of mysteries, Zhou Mingrui finds himself reincarnated as Klein Moretti in an alternate Victorian era world where he sees a world filled with machinery, cannons, dreadnoughts, airships, difference machines, as well as Potions, Divination, Hexes, Tarot Cards, Sealed Artifacts…
+            
+            The Light continues to shine but mystery has never gone far. Follow Klein as he finds himself entangled with the Churches of the world—both orthodox and unorthodox—while he slowly develops newfound powers thanks to the Beyonder potions.
+            
+            Like the corresponding tarot card, The Fool, which is numbered 0—a number of unlimited potential—this is the legend of "The Fool."</p>
+        </section>
+    </main>
+
+    <video id="bg-video" autoplay muted loop>
+        <source src="Pathways.mp4" type="video/mp4">
+        Your browser does not support videos
+    </video>
     
 </body>
 </html>

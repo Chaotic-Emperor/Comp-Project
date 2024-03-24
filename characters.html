@@ -13,7 +13,7 @@
     <body>
         <div class="top">
             <header class="mhead">
-                <a href="lotm.html" title="About Lord of the Mysteries">
+                <a href="about.html" title="About Lord of the Mysteries">
                     <img src="Images/Site-logo.webp" alt="LOTM Logo">
                 </a>
                 <h1 class="lotm">Lord of the Mysteries</h1>
@@ -113,7 +113,20 @@
 
         
 
-        <script src="func.js"> </script>
+        <script>
+            var video = document.getElementById("bg-video");
+            var button1 = document.getElementById("plpa");
+
+            function plpa() {
+                if (video.paused) {
+                    video.play();
+                    button1.innerHTML = "<i class=\"material-icons\">pause</i>"
+                } else {
+                    video.pause();
+                    button1.innerHTML = "<i class=\"material-icons\">play_arrow</i>"
+                }
+            }
+        </script>
 
     </body>
 </html>

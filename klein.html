@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="common.css">
     <title>Klein</title>
     <style>
+        body {
+            background: rgb(89, 65, 112) url('Images/Fool_Symbol.webp') center top no-repeat;
+            background-size: min(100vh,100vw);
+        }
         .link:hover:not(.active-sub) {
             background-color: rgb(194, 129, 255) !important;
         }
         .trial:hover:not(.active-sub) {
             background-color: rgba(192, 192, 192, 0.603) !important;
+        }
+        .but button{
+            background-color: rgb(136, 33, 184);
+            border: min(0.4vh,0.4vw) solid rgb(207, 108, 253);
+            font-size: min(2vh,2vw);
+            border-radius: min(0.5vh, 0.5vw);
+        }
+        blockquote {
+            border-left: 5px solid #9e7fcf;
         }
     </style>
 </head>
@@ -19,7 +32,7 @@
 
     <div class="top">
         <header class="mhead">
-            <a href="lotm.html" title="About Lord of the Mysteries">
+            <a href="about.html" title="About Lord of the Mysteries">
                 <img src="Images/Site-logo.webp" alt="LOTM Logo">
             </a>
             <h1 class="lotm">Lord of the Mysteries</h1>
@@ -48,30 +61,143 @@
         </nav>
     </div>
 
-    <section></section>
+    <main>
+
+        <section>
+            <article>
+                <blockquote id="quote">
+                    “The Blessed of the Spirit World and the Sefirah Castle; The Mystery stemming from ancient times; The witness of an extended history; Protector of all poor children in Backlund; The great Gehrman Sparrow.”
+                </blockquote>
+            </article>
+
+            <article>
+                <h2>Background</h2>
+                <p>Klein Moretti was originally a human that lived on Earth but was transmigrated after following a ritual that he came across while on the road. His original name was Zhou Mingrui, and original job was geared towards Engineering and Physics. After being transmigrated, Zhou possessed the body of Klein Moretti, a person who had mysteriously killed himself. With fragmented memory of his self, he chose to check his self and then conducted the ritual that brought him there only to create a gathering. He decided to adopt the persona of The Fool in the gathering acting as a god who had control over them</p>
+            </article>
+            
+            <article>
+                <h2>Appearance</h2>
+                <p>Because of his ability that he gains later on, he is able to change his appearance at will and has thus created multiple personas. Each of his persona has a different characteristic</p>
+                <ul>
+                    <li>
+                        <h3>Klein Moretti</h3>
+                        <p>Klein Moretti is shown to be a young scholar with a trimmed beard and an average face. He has a refined air about him mostly brought forward by the way he dressed in suits and carries a cane with him.</p>
+                    </li>
+                    <li>
+                        <h3>Gehrman Sparrow</h3>
+                        <p>Gehrman Sparrow is a persona crafted from mixing the two names Gehrman and Sparrow which are references to popular movies from Earth. Gehrman Sparrow was crafted to be a fearsome hunter with sharp features who revels in hunting others for fun. He appears to be a young gentleman with gold-rimmed glasses, neat black hair and dark brown eyes. He exudes a reined demeanour and a gloomy aura which makes him appear like an experienced hunter</p>
+                    <li>
+                        <h3>The Fool</h3>
+                        <p>The Fool is a persona Klein created when he first created the Tarot club gathering. It is supposed to represent a god and after obtaining godhood, he truly becomes the fool. He has an illusory mask on his face, a pair of black gloves, and a staff inlaid with star speckles all being the uniqueness of the fool, error, and door pathway respectly His facial features are mostly a mix of Klein Moretti and Gehrman Sparrow</p>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Personality</h2>
+                <p>He has different personalities crafted for each of his persona.</p>
+                <ul>
+                    <li>
+                        <h3>Klein Moretti</h3>
+                        <p>Klein is an eternal student who learns mysticism from Old Neil in the Church of Evernight. As such, he has a civilised and collected personality, most of which are consolidated by his background as a student of history (Klein) and as an engineering student (Zhou).</p>
+                    </li>
+                    <li>
+                        <h3>Gehrman Sparrow</h3>
+                        <p>He appears to be a cold man that does not say much, stays cold, calm, and collected. It has been noted that the impression that he leaves on other people is that of a crazed psychopath who would do anything to achieve his goals and hunt others, not revealing the slightest of discomfort in hunting demigods</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>The Fool</h3>
+                        <p>The Fool is protrayed as a god who has revived after the ancient times. He appears to be omniscient and he doesn't speak much maintaining his air of omniscience. He often gives out hints to the members of the Tarot Club Gathering setting them on the right path to the truth and speaks cryptic to make them reach to a conclusion that fits the information that they have. This mostly plays ties to his answers on history.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <aside>
+            <div class="but">
+                <button onclick="km()">Klein Moretti</button>
+                <button onclick="gs()">Gehrman Sparrow</button>
+                <button onclick="fool()">The Fool</button>
+            </div>
+            <div class="im">
+                <img src="Images/Klein_Moretti_Official.png" alt="Klein Moretti" id="images">
+                <h1 id="name" style="text-align: center;">Klein Moretti</h1>
+            </div>
+            <div class="geninfo">
+                <h3>Unique trait</h3>
+                <p>Cunningness</p>
+                <h3>Pathway</h3>
+                <p>Fool</p>
+                <h3>Common Aliases</h3>
+                <ul>
+                    <li>Klein Moretti</li>
+                    <li>Gehrman Sparrow</li>
+                    <li>The Fool</li>
+                </ul>
+            </div>
+            <div class="phys">
+                <h3>Gender</h3>
+                <p>Male</p>
+                <h3>Species</h3>
+                <p id="sp">Human</p> 
+            </div>
+            
+        </aside>
+
+    </main>
 
     <script>
         function chgimg () {
             var img = sessionStorage.getItem('fool');
             if (img == '1') {
-                document.body.style.background = "rgb(89, 65, 112) url('Images/Fool_Symbol.webp') center top no-repeat";
+                kl();
                 sessionStorage.clear();
             } else if (img == '2') {
-                document.body.style.background = "rgb(145, 144, 134) url('Images/Church\ of\ the\ food.png') center top no-repeat";
-                const collection = document.getElementsByClassName("hnav");
-                collection[0].style.backgroundColor = "rgba(192, 192, 192, 0.308)";
-
-                var lin = document.querySelectorAll("li a");
-                for (let i = 0; i < lin.length; i++) {
-                    lin[i].classList.remove('link', 'trial');
-                    lin[i].classList.add('trial');
-                }
-                lin[1].classList.add('active-sub');
-
+                fool();
                 sessionStorage.clear();
             }
             
             document.body.style.backgroundSize = "min(100vw,100vh)";
+        }
+
+        function km() {
+            document.getElementById('images').src = "Images/Klein_Moretti_Official.png";
+            document.getElementById('images').alt = "Klein Moretti";
+            document.getElementById('name').innerHTML = "Klein Moretti";
+            kl();
+        }
+
+        function gs() {
+            document.getElementById('images').src = "Images/Gehrman_Sparrow_Official.png";
+            document.getElementById('images').alt = "Gehrman Sparrow";
+            document.getElementById('name').innerHTML = "Gehrman Sparrow";
+            kl();
+        }
+
+        function kl() {
+            document.body.style.background = "rgb(89, 65, 112) url('Images/Fool_Symbol.webp') center top no-repeat";
+            document.body.style.backgroundSize = "min(100vw,100vh)";
+            document.getElementById('quote').innerHTML = '“The Blessed of the Spirit World and the Sefirah Castle; The Mystery stemming from ancient times; The witness of an extended history; Protector of all poor children in Backlund; The great Gehrman Sparrow.”'
+            document.getElementById('sp').innerHTML = 'Human'
+        }
+
+        function fool() {
+            document.getElementById('images').src = "Images/The_Fool_Official.png";
+            document.getElementById('images').alt = "The Fool";
+            document.getElementById('name').innerHTML = "The Fool";
+            document.body.style.background = "rgb(145, 144, 134) url('Images/Church\ of\ the\ food.png') center top no-repeat";
+            document.body.style.backgroundSize = "min(100vw,100vh)";
+            const collection = document.getElementsByClassName("hnav");
+            collection[0].style.backgroundColor = "rgba(192, 192, 192, 0.308)";
+            var lin = document.querySelectorAll("li a");
+            for (let i = 0; i < lin.length; i++) {
+                lin[i].classList.remove('link', 'trial');
+                lin[i].classList.add('trial');
+            }
+            lin[1].classList.add('active-sub');
+            document.getElementById('quote').innerHTML = 'The Fool that doesn\'t belong to this era; The Mysterious Ruler above the gray fog; The King of Yellow and Black who wields good luck.'
+            document.getElementById('sp').innerHTML = 'Mythical Creature'
         }
     </script>
 </body>
